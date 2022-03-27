@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <!-- tab-title -->
+    <title>habom</title>
+    <script>
+      function colorSvgIcons() {
+        let colorIcon = getComputedStyle(
+          document.documentElement
+        ).getPropertyValue("--footer-font-main");
+        document
+          .querySelectorAll(".external-link__icon > svg > path")
+          .forEach((pathBody) => pathBody.setAttribute("fill", colorIcon));
+
+        let colorSymbol = getComputedStyle(
+          document.documentElement
+        ).getPropertyValue("--footer-font-sub");
+        document
+          .querySelectorAll(".svg-symbol")
+          .forEach((pathBody) => pathBody.setAttribute("fill", colorSymbol));
+      }
+    </script>
+  </head>
+  <body onload="colorSvgIcons()">
+    <!-- header -->
+    <header>
+      <div class="header__logo center">
+        <!-- 로고 이미지 -->
+        <img src="./statics/images/logo/logo.png" />
+      </div>
+      <nav class="center">
+        <!-- header-button -->
+        <ul class="nav">
+          <li class="nav__link bold"> Problem </li>
+          <li class="nav__link bold"> Solution </li>
+          <li class="nav__link bold"> How to </li>
+          <li class="nav__link bold"> Contact </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- banner -->
+      <div class="top-banner">
+        <div class="top-banner__content">
+          <p class="top-banner__title bold">
+            꽃시장에 원하는 꽃이 없거나, 
+            <br />
+            예상과 다른 가격에 당황하신적 있나요?
+          </p>
+          <p class="top-banner__subtitle regular">
+          </br>시장에 꽃이 있는지, 시세가 어떻게 되는지 확인하고</br>
+            합리적인 가격에 원하는 꽃을 구매해 보세요!
+          </p>
+          <a href="http://13.209.35.118/public/dashboards/9eUb3yhQk6wyTfZvdR5snPtVJEqyJgZbhqvsPyU4?org_slug=default&p_%EA%BD%83%20%EC%A2%85%EB%A5%98=%5B%22%ED%8A%9C%EB%A6%BD%22,%22%ED%94%84%EB%A6%AC%EC%A7%80%EC%95%84%22%5D"  target=”_blank”>
+            <div class="top-banner__cta-button center bold">
+              꽃 가격 정보 검색하기
+            </div>
+          </a>
+        </div>
+
+        <!-- 배너 이미지 -->
+        <img
+          src="./statics/images/top-banner/Anxiety-pana_2.svg"
+          class="top-banner__image"
+        />
+
+      </div>
+      <!-- services -->
+      <section id="service-section" class="container">
+        <div class="section-title">
+          <h3 class="section-title__sub center bold"
+            >왜 꽃가격을 시장에 가야지만 알 수 있나요?</h3>
+        </div>
+
+     <!-- image -->
+      <center>
+        <img class ="no2image"
+        src="statics/images/top-banner/seesaw_image.svg"
+        />
+      </center>
+   
+      </div>
+
+      <div class="card__">  
+        <p class="second_middle_sub regular">
+          그 이유는, 꽃의 유통정보가 
+          <b>투명하게 공개되지 않기 때문</b>이에요.</br>
+          유통 과정에 있어서 도매상이 
+          <b>꽃 가격 정보를 공개하지 않고, 독점하고 있어</b>요</br>
+          그래서 플로리스트들이 직접 발품을 팔며 꽃 가격 정보를 물어보는 수밖에 없어요
+        </p>
+      </div>
+
+ <div class="no2dan">
+  <h3 class="section-title__sub center bold"
+    >간편 검색을 통해 꽃시장 정보를 알 수 있어요</h3>
+</div>
+
+
+        <div class="grid-3fr">
+          <div class="card__">  
+            <p class="card__title bold">
+              꽃의 시세를 알 수 있어요</p
+            >
+            <p class="card__subtitle regular">
+              양재, 경부선 꽃 시장에서 거래되는 꽃의
+              <br />
+             대략적인 시세를 알려드려요 <br />
+             <br />
+             시세를 알면 어떤 꽃을 얼마에, 얼만큼<br />
+             살 수 있는지 등, 사입계획을 구체적으로 <br />
+             세울 수 있어요
+            </p>
+    
+            <center>
+              <img class ="card__image"
+              src="./statics/images/services/money.svg"
+            />
+          </center>
+
+          </div>
+
+          <div class="card__">  
+            <p class="card__title bold">
+              <!-- 최대 길이 17자 -->
+              원하는 꽃이 있을지 미리 알 수 있어요</p
+            >
+            <p class="card__subtitle regular">
+              <!-- 최대 길이 22자 -->
+              원하는 꽃을 검색하면, 최근 1주일 동안<br />
+              거래가 있었는지 알려드려요<br />
+             <br />
+            고객이 원하는 꽃을 다음날 시장에서<br />
+            구할 수 있을지 없을지, 검색하면 바로 <br />
+            알 수 있어요.
+            </p>
+
+
+          <center>
+            <img class ="card__image"
+            src="./statics/images/services/light.svg"
+          />
+        </center>
+
+          </div>
+
+          <div class="card__">
+            <p class="card__title bold">
+              <!-- 최대 길이 17자 -->
+              간편 검색하고, 한눈에 볼 수 있어요</p>
+            <p class="card__subtitle regular">
+              검색창에 꽃 이름만 입력하면, 최근 거래 <br />
+            현황과 시세를 한눈에 바로 볼 수 있어요<br />
+            <br />
+             더 이상 커뮤니티나 오픈 채팅방에 꽃이 <br />
+             있는지, 얼마인지 질문하고 기다리지<br />
+             않아도 돼요.<br />
+            </p>
+       
+
+          <center>
+            <img class ="card__image"
+            src="./statics/images/services/magnifying.svg"
+          />
+        </center>
+
+          </div>
+        </div>
+      </section>
+
+
+ <div class="no4">
+  <h3 class="section-title__sub center bold">
+    원하는 꽃을 검색하면, 시세와 거래 현황을 볼 수 있어요</h3>
+</div>
+
+<center>
+  <img class ="mockupimage"
+  src="statics/images/top-banner/mockup.png" />
+</center>
+
+
+<p class="card__subtitle center">
+  믿을 수 있는 정보를 제공하기 위해, 화훼유통정보의 '일자별 경매정보' 데이터를 이용해 만들었어요.<br />
+  양재/경부선 꽃시장의 꽃시세는 한국농촌경제연구원 자료에 따라 각각 경매 가격의 7%, 15%를 곱하여 제공하고 있어요.
+</p>
+
+
+
+      <div class="center">
+      <a href="http://13.209.35.118/public/dashboards/9eUb3yhQk6wyTfZvdR5snPtVJEqyJgZbhqvsPyU4?org_slug=default&p_%EA%BD%83%20%EC%A2%85%EB%A5%98=%5B%22%ED%8A%9C%EB%A6%BD%22,%22%ED%94%84%EB%A6%AC%EC%A7%80%EC%95%84%22%5D"  target=”_blank”>
+        <div class="top-banner__cta-button center bold">
+          꽃 가격 정보 검색하기
+        </div>
+      </a>
+    </div>
+
+
+    </main>
+
+
+
+    <footer>
+      <div>
+        <div class="footer__top">
+          <div class="footer__top__logo">
+            <!-- 로고 이미지 -->
+            <img src="./statics/images/logo/logo.png" />
+          </div>
+          <div class="footer__top__info">
+            <div class="footer__top__info__external-link">
+              <p class="footer__top__info__title bold"> external Link </p>
+              <ul>
+                <li class="external-link__wrapper">
+                  <div class="external-link__icon">
+                    <svg
+                      width="20"
+                      height="21"
+                      viewBox="0 0 20 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M18.8928 0.500022H1.10716C0.812983 0.49817 0.530444 0.614042 0.322243 0.822243C0.114042 1.03018 -0.00182999 1.31298 2.18601e-05 1.60716V19.4C2.18601e-05 19.6928 0.116953 19.9741 0.324624 20.1804C0.53256 20.3867 0.814041 20.5018 1.10716 20.5H10.7143V12.7571H8.07858V9.73572H10.7143V7.51429C10.7143 4.92858 12.2929 3.52144 14.5928 3.52144C15.3706 3.51536 16.1484 3.55584 16.9214 3.64287V6.34287H15.3C14.0428 6.34287 13.8 6.93572 13.8 7.80715V9.73572H16.7928L16.4286 12.7571H13.8V20.5H18.9C19.1928 20.5 19.4741 20.383 19.6804 20.1754C19.8867 19.9674 20.0018 19.686 20 19.3928V1.60716C20.0018 1.31298 19.886 1.03044 19.6778 0.822243C19.4698 0.614042 19.187 0.49817 18.8928 0.500022Z"
+                        fill="#262626"
+                      />
+                    </svg>
+                  </div>
+                  <p class="external-link__name"> Facebook </p>
+                </li>
+                <li class="external-link__wrapper">
+                  <div class="external-link__icon">
+                    <svg
+                      width="20"
+                      height="21"
+                      viewBox="0 0 20 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.94 6.38C19.78 2.74667 17.76 0.726667 14.1267 0.56C13.0533 0.5 12.7133 0.5 10 0.5C7.28667 0.5 6.94667 0.5 5.88 0.56C2.24667 0.726667 0.226667 2.74 0.06 6.37333C7.3586e-09 7.44667 0 7.78667 0 10.5C0 13.2133 7.3586e-09 13.5533 0.06 14.62C0.226667 18.2533 2.24 20.2733 5.87333 20.44C6.94667 20.5 7.28667 20.5 10 20.5C12.7133 20.5 13.0533 20.5 14.1267 20.44C17.7533 20.2733 19.7733 18.26 19.94 14.62C20 13.5533 20 13.2133 20 10.5C20 7.78667 20 7.44667 19.94 6.38ZM10 15.6333C7.16494 15.6333 4.86667 13.3351 4.86667 10.5C4.86667 7.66494 7.16494 5.36667 10 5.36667C12.8351 5.36667 15.1333 7.66494 15.1333 10.5C15.1333 13.3351 12.8351 15.6333 10 15.6333ZM15.3333 6.36C14.6706 6.36 14.1333 5.82272 14.1333 5.16C14.1333 4.49728 14.6706 3.96 15.3333 3.96C15.996 3.96 16.5333 4.49728 16.5333 5.16C16.5351 5.47877 16.4094 5.78519 16.184 6.01062C15.9585 6.23605 15.6521 6.36173 15.3333 6.36Z"
+                        fill="#262626"
+                      />
+                    </svg>
+                  </div>
+                  <p class="external-link__name"> Instagram </p>
+                </li>
+                <li class="external-link__wrapper">
+                  <div class="external-link__icon">
+                    <svg
+                      width="20"
+                      height="21"
+                      viewBox="0 0 20 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M10 0.5C15.5228 0.5 20 4.97715 20 10.5C20 16.0228 15.5228 20.5 10 20.5C4.47715 20.5 0 16.0228 0 10.5C0 4.97715 4.47715 0.5 10 0.5ZM13.9286 15.921H6.4036V16.2143H13.9286V15.921ZM13.3384 3.74992C11.5859 4.9099 10.3874 7.12263 10.3874 7.12263C9.84881 7.99098 8.96745 9.50338 8.0838 11.0407L7.91817 11.3291C7.2838 12.4346 6.65923 13.533 6.17091 14.3944C5.82601 14.3944 5.37076 14.0147 5.37076 14.0147C5.54044 14.4546 6 14.6917 6 14.6917C5.52938 15.5232 5.22321 16.0676 5.22321 16.0676L6.25605 15.6277C6.37286 15.3363 6.4952 15.0509 6.62246 14.7726C10.8872 14.6451 12.2012 12.1719 12.2995 11.9743L12.3052 11.9625C12.3054 11.962 12.3055 11.9617 12.3055 11.9617C13.1386 10.4292 12.1366 10.0915 12.0211 10.0583L12.0132 10.0561C12.0114 10.0556 12.0104 10.0554 12.0104 10.0554C10.5463 9.6543 8.11332 12.0601 8.11332 12.0601C9.38811 10.0777 10.6449 8.77524 10.9213 8.49786L10.9521 8.46716C10.9548 8.46442 10.9574 8.4619 10.9597 8.45962L10.9709 8.44861C10.9751 8.44447 10.9773 8.44239 10.9773 8.44239C11.7993 7.63029 11.5219 7.22892 11.4397 7.14127L11.4307 7.1321C11.4242 7.12575 11.4202 7.12263 11.4202 7.12263C13.6962 5.7155 13.7802 4.38023 13.7813 4.20844L13.7813 4.19817C13.7812 4.19679 13.7812 4.19558 13.7812 4.19454L13.781 4.19036C13.781 4.19001 13.781 4.18984 13.781 4.18984C13.781 3.52843 13.3384 3.74992 13.3384 3.74992ZM11.7153 11.0462L11.7152 11.0544C11.7144 11.0895 11.7081 11.2322 11.6609 11.3972C11.4482 12.1432 10.3508 14.2172 6.77124 14.4546C6.77124 14.4546 8.05584 12.1075 10.6825 10.642C10.6825 10.642 11.7153 10.0472 11.7153 11.0462ZM10.8301 7.26927C11.2465 7.4323 10.8777 7.80934 10.8341 7.8519L10.8301 7.85583C10.7645 7.92678 10.6764 8.01725 10.5811 8.11304L10.5085 8.18565C10.2393 8.45395 9.94476 8.73567 9.94476 8.73567C10.3551 7.92426 10.8301 7.26927 10.8301 7.26927ZM13.1908 4.33648C13.1908 4.33648 13.1863 4.35124 13.1762 4.37902L13.1662 4.40598C13.0523 4.70668 12.5156 5.92773 10.9773 6.97599C10.9773 6.97599 12.0971 5.29636 13.1908 4.33648Z"
+                        fill="#262626"
+                      />
+                    </svg>
+                  </div>
+                  <p class="external-link__name"> Brunch </p>
+                </li>
+                <li class="external-link__wrapper">
+                  <div class="external-link__icon">
+                    <!-- footer-svg -->
+                    <svg
+                      width="19"
+                      height="14"
+                      viewBox="0 0 19 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M18.603 2.92298C18.3845 2.12232 17.7406 1.49176 16.9232 1.27776C15.4415 0.888916 9.5 0.888916 9.5 0.888916C9.5 0.888916 3.55856 0.888916 2.07682 1.27776C1.25936 1.49179 0.615539 2.12232 0.397023 2.92298C0 4.3742 0 7.40205 0 7.40205C0 7.40205 0 10.4299 0.397023 11.8811C0.615539 12.6818 1.25936 13.2861 2.07682 13.5001C3.55856 13.8889 9.5 13.8889 9.5 13.8889C9.5 13.8889 15.4414 13.8889 16.9232 13.5001C17.7406 13.2861 18.3845 12.6818 18.603 11.8811C19 10.4299 19 7.40205 19 7.40205C19 7.40205 19 4.3742 18.603 2.92298ZM7.5568 10.1511V4.65299L12.5227 7.40212L7.5568 10.1511Z"
+                        fill="#262626"
+                      />
+                    </svg>
+                  </div>
+                  <p class="external-link__name"> Youtube </p>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__top__info__contact">
+              <p class="footer__top__info__title bold"> Contact </p>
+              <div class="footer__top__info__detail">
+                <p class="footer-text-wrapper semi-bold">
+                  전화상담
+                  <svg
+                    width="2"
+                    height="16"
+                    viewBox="0 0 2 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="line3-image svg-symbol"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.16198 16L0.161981 -4.37114e-08L1.16504 0L1.16504 16L0.16198 16Z"
+                    />
+                  </svg>
+
+                  <!-- <img
+                    class="line3-image"
+                    src="./statics/images/Line 3 (Stroke).png"
+                  /> -->
+                  02-6203-1222
+                </p>
+                <p class="footer-text-wrapper semi-bold">
+                  상담시간
+                  <svg
+                    width="2"
+                    height="16"
+                    viewBox="0 0 2 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="line3-image svg-symbol"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.16198 16L0.161981 -4.37114e-08L1.16504 0L1.16504 16L0.16198 16Z"
+                    />
+                  </svg>
+                  <!-- <img
+                    class="line3-image"
+                    src="./statics/images/Line 3 (Stroke).png"
+                  /> -->
+                  11:00 - 19:00 (주말, 공휴일 제외)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+    </footer>
+  </body>
+</html>
+
